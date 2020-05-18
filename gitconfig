@@ -1,0 +1,44 @@
+[user]
+	name = Artem Dmitriev
+	email = yosico.xc@gmail.com
+[credential]
+	helper = cache --timeout=3600
+
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[core]
+	excludesfile = /home/yos/.gitignore_global
+	pager = "less -F -X"
+
+[alias]
+lg = log --graph --all --format=format:'%C(bold yellow)%d%C(reset)%n%C(green)%h%C(reset) : %C(magenta)%an%C(reset) : %C(cyan)%ar%C(reset)%n%s%n%b'
+lgf = log --name-status
+st = status
+out = log origin/artem.d..
+ch = checkout
+dc = diff --cached
+br = branch
+com = commit
+df = difftool
+[push]
+	default = simple
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+

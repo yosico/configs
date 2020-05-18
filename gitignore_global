@@ -1,0 +1,7 @@
+tags
+.tags
+*.orig
+*.swp
+*.log
+node_modules
+Session.vim
